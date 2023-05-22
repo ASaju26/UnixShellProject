@@ -1,4 +1,4 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=10075203&assignment_repo_type=AssignmentRepo)
+
 ## Description
 In this assignment you will write your own shell program, Mav shell (msh), similar to 
 bourne shell (bash), c-shell (csh), or korn shell (ksh). It will accept commands, fork a child 
@@ -11,7 +11,6 @@ commands until the user exits the shell
 accept input. It must read a line of input and, if the command given is a supported shell 
 command, it shall execute the command and display the output of the command.
 
-<img src="Images/prompt.png" alt="main" width="400"/>
 
    #### Tests
    * make test_quit 
@@ -22,7 +21,6 @@ command, it shall execute the command and display the output of the command.
 2. If the command is not supported your shell shall print the invalid 
 command followed by “: Command not found.”
 
-<img src="Images/notfound.png" alt="main" width="400"/>
 
    #### Tests
    * \TODO test_notfound
@@ -43,7 +41,6 @@ prompt and accept another line of input.
 5. If the user types a blank line, your shell will, quietly and with no other 
 output, print another prompt and accept a new line of input.
 
-<img src="Images/blank.png" alt="main" width="400"/>
 
    #### Tests
    * make test_blank
@@ -70,8 +67,6 @@ exec family of functions. Your Mav shell shall not use system(). Use of system()
 9. Your shell shall support the cd command to change directories. Your 
 shell must handle cd ..
 
-<img src="Images/cd.png" alt="main" width="400"/>
-
    #### Tests
    * make test_cd
 
@@ -81,7 +76,6 @@ result in your shell re-running the nth command. If the nth command does not exi
 your shell will state “Command not in history.”. The output shall be a list of 
 numbers 1 through n and their commands, each on a separate line, single spaced.
 
-<img src="Images/history.png" alt="main" width="400"/>
 
    #### Tests
    * \TODO make test_history
@@ -128,26 +122,5 @@ output shall be the output of the commands entered or the shell prompt.
    * Inspection
    * make test
    
-## Administrative
 
-This assignment must be coded in C. Any other language will result in 0 points. You 
-programs will be compiled and graded on the course GitHub Codespace. Code that does not compile 
-with :
-        gcc msh.c -o msh 
-will result in a 0.
 
-Your program, msh.c is to be turned in via the Feedback GitHub pull request. **Do not merge this pull request**.  Submission time is determined by 
-the GitHub system time. You may push your code as often as you wish. Only your 
-last submission will be graded. 
-
-There are coding resources and working code you may use on the course GitHub page and in the assignment repository at: https://github.com/CSE3320/Shell-Assignment. You are free to use any of that code in your program if needed. You may use no other outside code.
-
-## Academic Integrity
-This assignment must be 100% your own work. No code may be copied from friends, 
-previous students, books, web pages, etc. All code submitted is automatically checked 
-against a database of previous semester’s graded assignments, current student’s code 
-and common web sources. By submitting your code on GitHub you are attesting that 
-you have neither given nor received unauthorized assistance on this work. Code that 
-is copied from an external source or used as inspiration, excluding the 
-course github, will result in a 0 for the assignment and referral to 
-the Office of Student Conduct.
